@@ -262,11 +262,6 @@
     <p style="max-width:500px;font-size:16px;line-height:1.7;color:rgba(239,224,205,0.75);margin-bottom:0">
       HALO is a real-time adaptive headlight system that perceives the road in three dimensions and selectively shapes its beam — illuminating the path ahead while masking glare around oncoming drivers, pedestrians, and cyclists.
     </p>
-    <div class="hero-stats">
-      <span><strong>16</strong>LED Segments</span>
-      <span><strong>&lt;33<em>ms</em></strong>Inference Latency</span>
-      <span><strong>2</strong>Stereo Cameras</span>
-    </div>
   </div>
 
   <div class="hero-right">
@@ -366,13 +361,6 @@
         <div class="arch-desc-text" id="arch-text">Two synchronised cameras capture the forward field of view at 30 FPS. Calibrated baseline enables disparity-based depth recovery for every detected entity.</div>
       </div>
     </div>
-
-    <div class="arch-specs">
-      <div class="spec"><div class="spec-label">// Compute Platform</div><div class="spec-value">Jetson<span class="spec-unit"> Orin Nano</span></div></div>
-      <div class="spec"><div class="spec-label">// LED Segments</div><div class="spec-value">16<span class="spec-unit"> · Cree XP-G3</span></div></div>
-      <div class="spec"><div class="spec-label">// Driver IC</div><div class="spec-value">EVQ<span class="spec-unit"> 7228</span></div></div>
-      <div class="spec"><div class="spec-label">// Production Target</div><div class="spec-value">FPGA<span class="spec-unit"> · Custom</span></div></div>
-    </div>
   </div>
 </section>
 
@@ -383,11 +371,6 @@
       <h2>Sixteen pixels of <em>intent.</em></h2>
       <p>The HALO matrix array divides the forward beam into sixteen Cree XP-G3 LED segments, each individually addressable through an EVQ7228 / MPQ7228 driver bank. Every frame, the perception pipeline emits an attenuation map: which segments stay bright, which dim, which fully extinguish.</p>
       <p>Move your cursor across the array. Each segment responds independently — the same logic that, on the road, decides whether to illuminate a tree or shield an oncoming rider's eyes.</p>
-      <div class="matrix-stats">
-        <span><strong>16</strong>Independent Segments</span>
-        <span><strong>30</strong>Updates / Second</span>
-        <span><strong>0</strong>Mechanical Parts</span>
-      </div>
     </div>
     <div class="matrix-canvas-wrap"><canvas id="matrix-canvas"></canvas></div>
   </div>
